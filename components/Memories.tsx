@@ -34,6 +34,42 @@ const photos = [
         rotate: 3,
         caption: "Love you 3000"
     },
+    {
+        src: "/images/photo7.jpg",
+        rotate: 2,
+        caption: ""
+    },
+    {
+        src: "/images/photo8.jpg",
+        rotate: 1,
+        caption: ""
+    },
+    {
+        src: "/images/photo9.jpg",
+        rotate: -3,
+        caption: ""
+    },
+    {
+        src: "/images/photo10.jpg",
+        rotate: 2,
+        caption: ""
+    },
+    {
+        src: "/images/photo11.jpg",
+        rotate: -1,
+        caption: ""
+    },
+    {
+        src: "/images/photo12.jpg",
+        rotate: -2,
+        caption: ""
+    },
+    {
+        src: "/images/photo13.jpg",
+        rotate: 1,
+        caption: ""
+    },
+
 ];
 
 export default function Memories() {
