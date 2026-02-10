@@ -104,10 +104,11 @@ export default function Surprise() {
                             </div>
 
                             <h3 className="text-3xl font-playfair font-bold text-valentine-red mb-4">
-                                คนน่ารักต้องได้ดอกไม้ 💐
+                                Congratulations! you got this 💐
                             </h3>
                             <p className="font-poppins text-gray-600 mb-8">
-                                Thank you for being my Valentine. I promise to make every day special for you.
+                                คุณได้รับดอกไม่อิเล็กทรอนิกส์ 1 ชิ้น จาก ด.ช. ศักรินทร์ <br />
+                                Happy valentine's day นะคะ พี่คิดถึงหนูทู้กวันนนนน ขอให้วันนี้เป็นวันที่ดีนะคะ
                             </p>
 
                             <motion.button
