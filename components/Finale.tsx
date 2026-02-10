@@ -13,15 +13,13 @@ export default function Finale() {
                 className="relative z-10"
             >
                 <h2 className="text-3xl md:text-5xl font-playfair font-bold text-valentine-red mb-8">
-                    I choose you, everyday.
+                    ไว้ไปหาอะไรอร่อยๆกินกันนะคะ 🥰 เบิ้บบูวววว
                 </h2>
 
                 <p className="text-gray-500 font-poppins text-sm md:text-base mt-20">
-                    Made with love by Bank 💗
+                    Made with one prompt on Anti-gravity hahaha 💗
                 </p>
-                <p className="text-gray-400 text-xs mt-2">
-                    © 2026 Valentine's Day Project
-                </p>
+
             </motion.div>
 
             {/* Footer background glow */}
