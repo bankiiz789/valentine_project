@@ -12,27 +12,27 @@ const photos = [
     {
         src: "/images/photo2.jpg",
         rotate: 1,
-        caption: "ไว้ไปด้วยกันอีกนะคั้บ"
+        caption: ""
     },
     {
         src: "/images/photo3.jpg",
         rotate: -1,
-        caption: "ดูหนังๆๆๆๆๆๆ"
+        caption: ""
     },
     {
         src: "/images/photo4.jpg",
         rotate: 2,
-        caption: "first time date"
+        caption: ""
     },
     {
         src: "/images/photo5.jpg",
         rotate: -3,
-        caption: "น่ารักมั้ยแล"
+        caption: ""
     },
     {
         src: "/images/photo6.jpg",
         rotate: 3,
-        caption: "Love you 3000"
+        caption: ""
     },
     {
         src: "/images/photo7.jpg",

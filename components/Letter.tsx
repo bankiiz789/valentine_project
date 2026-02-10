@@ -72,7 +72,7 @@ export default function Letter() {
                     </p>
 
                     <div className="pt-8 text-right">
-                        <p className="font-playfair text-2xl md:text-3xl italic text-valentine-red">— Bank</p>
+                        <p className="font-playfair text-2xl md:text-3xl italic text-valentine-red">— Skr</p>
                     </div>
                 </div>
             </motion.div>
