@@ -1,0 +1,118 @@
+You are a senior frontend engineer and motion designer.
+Build a production-ready, single-page Valentine webapp using Next.js (App Router) with TypeScript, Tailwind CSS, and Framer Motion.
+This app is meant to be sent to my girlfriend and should feel playful, cute, and premium.
+It must be deployable to Vercel immediately.
+
+USER CONTENT
+- My name: Bank
+- Girlfriend name: Tawan
+- Date label: 14 Feb 2026 (you can hardcode)
+- Tone: playful (ขี้เล่น), cute, warm, not cringe
+- Main message 
+  "Happy Valentine's Day, Tawan 💖 I made this for you. Hope you like it."
+- Promise line: "จริงทุกๆวันก็เป็นวันแห่งความรักนะ คึตึ"
+
+TECH STACK / CONSTRAINTS
+- Next.js 15+ App Router
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- lucide-react (optional)
+- Use next/font: Poppins for UI + Playfair Display for headline (or similar)
+- Single page only: app/page.tsx as main route
+- No backend, no external APIs
+- Must run: npm install && npm run dev
+- Must build: npm run build
+- Must be ready for Vercel deploy, no TODOs
+
+DESIGN / UX REQUIREMENTS
+1) HERO (full screen)
+- Gradient background (romantic but playful)
+- Big headline: "Happy Valentine's Day, Tawan 💖"
+- Subline: "From Bank" + date chip "14 Feb 2026"
+- Primary CTA button: "Open my heart 💌" → smooth scroll to next section
+- Add small floating hearts in background (subtle)
+
+2) FLOWERS (MUST HAVE)
+- Add an animated flower/petal system across the whole page:
+  - Prefer Canvas petals OR lightweight DOM petals (no heavy libs)
+  - Petals drift/fall slowly, random size/rotation, gentle blur
+- Also include a bouquet / flower card illustration:
+  - Use inline SVG bouquet OR CSS flower shapes
+  - Place it in a “Gift” card section
+
+3) MEMORIES SECTION
+- Use 5 memory cards with playful styling
+- Animate in on scroll (staggered)
+- Each card has an emoji/icon + short text
+
+4) LOVE LETTER SECTION
+- A paper-like letter card with subtle grain texture (CSS)
+- Include:
+  "Happy Valentine's Day, Tawan 💖 I made this for you. Hope you like it."
+  plus 1–2 Thai playful lines (write them naturally)
+  then sign: "— Bank"
+- Add typewriter effect for the first line only.
+- Respect prefers-reduced-motion: if reduced, show text instantly.
+
+5) INTERACTIVE SURPRISE (CUTE)
+- Add a playful interaction:
+  Option A (recommended): "Will you be my Valentine?" with Yes/No buttons.
+    - No button dodges the cursor/tap playfully (but still accessible: allow long-press or a secondary link that triggers acceptance for keyboard users)
+    - Yes triggers:
+      - confetti burst (lightweight canvas particles)
+      - modal overlay with bouquet animation
+      - message: "เย้! รักเธอนะ Tawan 💖"
+      - a button: "Close (still love you)" to dismiss
+- Make it mobile-friendly (No button dodges within bounds)
+
+6) FINALE
+- Big line: "I choose you, everyday."
+- Soft glow, floating hearts/petals continue
+- Footer: "Made with love by Bank 💗"
+
+ANIMATION REQUIREMENTS (Framer Motion)
+- Page load: hero elements stagger in
+- Scroll: sections whileInView with once:true
+- Background: petals drift continuously (requestAnimationFrame if canvas)
+- Modal: spring animation
+
+ACCESSIBILITY / PERFORMANCE
+- Respect prefers-reduced-motion
+- Ensure readable contrast
+- Use semantic HTML, buttons, aria-labels
+- Keep assets minimal and inline (SVG)
+- Avoid huge dependencies
+
+PROJECT STRUCTURE
+- app/layout.tsx (fonts + metadata)
+- app/page.tsx (composes sections)
+- app/globals.css
+- components/
+  - Hero.tsx
+  - Petals.tsx (canvas or DOM)
+  - Memories.tsx
+  - Letter.tsx
+  - Surprise.tsx
+  - Finale.tsx
+  - BouquetSvg.tsx (inline SVG)
+  - useReducedMotionPref.ts (optional helper)
+  - smoothScroll.ts (optional helper)
+- Tailwind config and postcss config as needed
+
+DELIVERABLES
+Output the complete code for:
+- package.json
+- next.config.js (if needed)
+- tailwind.config.ts
+- postcss.config.js
+- tsconfig.json (if needed)
+- app/layout.tsx
+- app/page.tsx
+- app/globals.css
+- components/*
+
+Also include:
+- Exact commands to run locally
+- Exact steps to deploy on Vercel
+- Ensure code compiles without edits
