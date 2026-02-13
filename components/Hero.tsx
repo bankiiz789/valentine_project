@@ -65,7 +65,7 @@ export default function Hero({ onStart }: { onStart: () => void }) {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.8, type: "spring" }}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none"
+                className="absolute bottom-0 md:left-1/2 md:-translate-x-1/2 left-20 z-100 pointer-events-none"
             >
                 <div className="relative w-35 h-35 md:w-60 md:h-60">
                     <img
