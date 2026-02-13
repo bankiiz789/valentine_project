@@ -67,7 +67,7 @@ export default function Hero({ onStart }: { onStart: () => void }) {
                 transition={{ delay: 1, duration: 0.8, type: "spring" }}
                 className="absolute bottom-0 md:left-1/2 md:-translate-x-1/2 left-20 z-100 pointer-events-none"
             >
-                <div className="relative w-35 h-35 md:w-60 md:h-60">
+                <div className="relative w-40 h-40 md:w-60 md:h-60">
                     <img
                         src="/images/my_point.PNG"
                         alt="Me pointing up"
